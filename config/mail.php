@@ -1,7 +1,17 @@
-<?php
+<?php declare(strict_types=1);
+
+/**
+ * This file is part of acescore.zpf.io, one of HopeSeekr's Project.
+ *
+ * Copyright © 2020 PHP Experts, Inc.
+ * Author: Theodore R. Smith <theodore@phpexperts.pro>
+ *   GPG Fingerprint: 4BF8 2613 1C34 87AC D28F  2AD8 EB24 A91D D612 5690
+ *   https://github.com/hopeseekr/acescore.zpf.io
+ *
+ * This file is licensed under the MIT License.
+ */
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Default Mailer
@@ -35,14 +45,14 @@ return [
 
     'mailers' => [
         'smtp' => [
-            'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-            'port' => env('MAIL_PORT', 587),
+            'transport'  => 'smtp',
+            'host'       => env('MAIL_HOST', 'smtp.mailgun.org'),
+            'port'       => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
-            'timeout' => null,
-            'auth_mode' => null,
+            'username'   => env('MAIL_USERNAME'),
+            'password'   => env('MAIL_PASSWORD'),
+            'timeout'    => null,
+            'auth_mode'  => null,
         ],
 
         'ses' => [
@@ -59,12 +69,12 @@ return [
 
         'sendmail' => [
             'transport' => 'sendmail',
-            'path' => '/usr/sbin/sendmail -bs',
+            'path'      => '/usr/sbin/sendmail -bs',
         ],
 
         'log' => [
             'transport' => 'log',
-            'channel' => env('MAIL_LOG_CHANNEL'),
+            'channel'   => env('MAIL_LOG_CHANNEL'),
         ],
 
         'array' => [
@@ -85,7 +95,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'name'    => env('MAIL_FROM_NAME', 'Example'),
     ],
 
     /*
@@ -106,5 +116,4 @@ return [
             resource_path('views/vendor/mail'),
         ],
     ],
-
 ];

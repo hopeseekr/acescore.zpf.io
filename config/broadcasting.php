@@ -1,7 +1,17 @@
-<?php
+<?php declare(strict_types=1);
+
+/**
+ * This file is part of acescore.zpf.io, one of HopeSeekr's Project.
+ *
+ * Copyright © 2020 PHP Experts, Inc.
+ * Author: Theodore R. Smith <theodore@phpexperts.pro>
+ *   GPG Fingerprint: 4BF8 2613 1C34 87AC D28F  2AD8 EB24 A91D D612 5690
+ *   https://github.com/hopeseekr/acescore.zpf.io
+ *
+ * This file is licensed under the MIT License.
+ */
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Default Broadcaster
@@ -29,20 +39,19 @@ return [
     */
 
     'connections' => [
-
         'pusher' => [
-            'driver' => 'pusher',
-            'key' => env('PUSHER_APP_KEY'),
-            'secret' => env('PUSHER_APP_SECRET'),
-            'app_id' => env('PUSHER_APP_ID'),
+            'driver'  => 'pusher',
+            'key'     => env('PUSHER_APP_KEY'),
+            'secret'  => env('PUSHER_APP_SECRET'),
+            'app_id'  => env('PUSHER_APP_ID'),
             'options' => [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
-                'useTLS' => true,
+                'useTLS'  => true,
             ],
         ],
 
         'redis' => [
-            'driver' => 'redis',
+            'driver'     => 'redis',
             'connection' => 'default',
         ],
 
@@ -53,7 +62,5 @@ return [
         'null' => [
             'driver' => 'null',
         ],
-
     ],
-
 ];

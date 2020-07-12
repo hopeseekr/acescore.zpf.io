@@ -1,15 +1,15 @@
-<?php
+<?php declare(strict_types=1);
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+/**
+ * This file is part of acescore.zpf.io, one of HopeSeekr's Project.
+ *
+ * Copyright © 2020 PHP Experts, Inc.
+ * Author: Theodore R. Smith <theodore@phpexperts.pro>
+ *   GPG Fingerprint: 4BF8 2613 1C34 87AC D28F  2AD8 EB24 A91D D612 5690
+ *   https://github.com/hopeseekr/acescore.zpf.io
+ *
+ * This file is licensed under the MIT License.
+ */
 
 use Illuminate\Support\Facades\Auth;
 

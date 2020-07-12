@@ -13,16 +13,19 @@
 
 namespace App\Http\Controllers;
 
-class HomeController extends Controller
+use App\Models\Quiz;
+use Illuminate\Http\JsonResponse;
+
+class QuizController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    private Quiz $quiz;
+
+    public function __construct(Quiz $quiz = null)
     {
-        $this->middleware('auth');
+        if (!$quiz) {
+            $quiz = new Quiz();
+        }
+        $this->quiz = $quiz;
     }
 
     /**
@@ -32,6 +35,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return new JsonResponse($this->quiz->all());
+    }
+
+    public function show(int $questionId)
+    {
+        return new JsonResponse([
+            'id'       => $questionId,
+            'question' => $this->quiz->get($questionId - 1),
+        ]);
     }
 }

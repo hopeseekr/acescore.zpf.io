@@ -1,10 +1,14 @@
-<?php
+<?php declare(strict_types=1);
 
 /**
- * Laravel - A PHP Framework For Web Artisans
+ * This file is part of acescore.zpf.io, one of HopeSeekr's Project.
  *
- * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
+ * Copyright © 2020 PHP Experts, Inc.
+ * Author: Theodore R. Smith <theodore@phpexperts.pro>
+ *   GPG Fingerprint: 4BF8 2613 1C34 87AC D28F  2AD8 EB24 A91D D612 5690
+ *   https://github.com/hopeseekr/acescore.zpf.io
+ *
+ * This file is licensed under the MIT License.
  */
 
 define('LARAVEL_START', microtime(true));
@@ -21,7 +25,7 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +39,7 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+$app = require_once __DIR__ . '/../bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------
