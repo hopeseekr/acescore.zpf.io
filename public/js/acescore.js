@@ -7,4 +7,7 @@ $('button#calcACEScore').click(function () {
 
     $('section#scoreBox').css('visibility', 'visible');
     $('section#scoreBox #ACEScore').text(aceScore);
+
+    // From: https://stackoverflow.com/a/1891142/430062
+    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 });

@@ -51,5 +51,6 @@
             for this project over at GitHub.
         </p>
     </section>
+    <a href="#bottom"></a>
 </article>
 @endsection
