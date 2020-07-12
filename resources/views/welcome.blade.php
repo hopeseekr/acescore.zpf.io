@@ -18,7 +18,7 @@
     </section>
 
     <section id="quiz">
-        <h1>ACE Quiz</h1>
+        <h3>The Quiz</h3>
         <ol>
         @foreach($questions as $index => $question)
             <li>
@@ -36,8 +36,8 @@
         </div>
     </section>
 
-    <section id="scoreBox" style="min-height: 75px; max-height: 100px">
-        <h2 style="display: none; font-weight: bold; background: red; padding: 20px 50px; color: white">Your ACE Score is <span id="ACEScore"></span>!</h2>
+    <section id="scoreBox">
+        <h2 style="display: none;">Your ACE Score is <span id="ACEScore"></span>!</h2>
     </section>
 
     <section id="outro">
