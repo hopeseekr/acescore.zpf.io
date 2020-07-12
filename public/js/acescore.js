@@ -5,6 +5,6 @@ $('button#calcACEScore').click(function () {
         aceScore += parseInt($(this).val());
     });
 
-    $('section#scoreBox h2').show();
+    $('section#scoreBox').css('visibility', 'visible');
     $('section#scoreBox #ACEScore').text(aceScore);
 });

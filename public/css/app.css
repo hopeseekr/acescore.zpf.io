@@ -11,4 +11,5 @@
 /* Custom CSS */
 section { max-width: 40em; margin: 0 auto; color: black; }
 section#scoreBox { min-height: 75px; max-height: 100px; }
-section#scoreBox h2 { font-weight: bold; background: red; padding: 20px 50px; color: white; }
+section#scoreBox h2 { font-weight: bold; background: red; padding: 20px; color: white; text-align: center }
+section#scoreBox #meaning { text-align: center; }

@@ -36,8 +36,9 @@
         </div>
     </section>
 
-    <section id="scoreBox">
-        <h2 style="display: none;">Your ACE Score is <span id="ACEScore"></span>!</h2>
+    <section id="scoreBox" style="visibility: hidden">
+        <h2>Your ACE Score is <span id="ACEScore"></span>!</h2>
+        <h4 id="meaning">But <strong><a href="https://www.acesconnection.com/blog/got-your-ace-resilience-scores" target="_blank">what does it mean?</a></strong></h4>
     </section>
 
     <section id="outro">

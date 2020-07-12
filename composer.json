@@ -1,10 +1,10 @@
 {
-    "name": "laravel/laravel",
+    "name": "hopeseekr/acescore",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Easily calculate your ACE childhood adversity score.",
     "keywords": [
-        "framework",
-        "laravel"
+        "ace score",
+        "website"
     ],
     "license": "MIT",
     "require": {
