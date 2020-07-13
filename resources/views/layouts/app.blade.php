@@ -8,7 +8,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Laravel QuickStart Project</title>
+    <title>ACE Score Quiz | Childhood Adversity Test</title>
+
+    <meta name="description"         content="A simple quiz to find out your ACE score of childhood adversity."/>
+    <meta name="twitter:card"        content="summary_large_image"/>
+    <meta name="twitter:creator"     content="@hopeseekr"/>
+    <meta name="twitter:title"       content="Find your ACE Childhood Adversity Score"/>
+    <meta name="twitter:description" content="A simple quiz to find out your ACE score of childhood adversity."/>
+    <meta name="twitter:image"       content="https://acescore.zpf.io/images/ace-twitter.jpg"/>
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
