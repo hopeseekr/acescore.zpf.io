@@ -9,8 +9,11 @@ just to deal with us :-/
 
 Taken from [**Got Your ACE Score?**](https://acestoohigh.com/got-your-ace-score/)
 
-[![Installation Video](https://goo.gl/zrNzEL)](https://vimeo.com/254289186)
+## Watch it being made
 
+I recorded myself making this web app.
+
+You can watch a x12 timelapse of it at https://youtu.be/JDGqqcaeP8s.
 
 ## Inspiration ##
 
